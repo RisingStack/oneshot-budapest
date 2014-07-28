@@ -4,7 +4,7 @@ Date: TBA (November, 2014)
 
 Venue: TBA
 
-ONE-SHOT is a one day single track speaker series presented by RisingStack and NodeConf.
+ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
 ## Talk Acceptance
 
