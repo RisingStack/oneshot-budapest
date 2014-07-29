@@ -1,8 +1,8 @@
 # Speak at ONE-SHOT Budapest!
 
-Date: TBA (November, 2014)
+Date: November 21th, 2014
 
-Venue: TBA
+Venue: Design Terminal, Budapest
 
 ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
