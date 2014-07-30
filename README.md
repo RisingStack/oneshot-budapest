@@ -4,6 +4,8 @@ Date: November 21th, 2014
 
 Venue: Design Terminal, Budapest
 
+Web: [One-Shot Budapest](http://oneshot.risingstack.com)
+
 ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
 ## Talk Acceptance
