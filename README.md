@@ -6,7 +6,7 @@ Venue: Design Terminal, Budapest
 
 Web: [One-Shot Budapest](http://oneshot.risingstack.com)
 
-ONE-SHOT is a one day single track speaker series presented by NodeConf.
+ONE-SHOT is a one day single track speaker series presented by [NodeConf](http://nodeconf.com) and organized by [RisingStack](http://risingstack.com).
 
 ## Talk Acceptance
 
