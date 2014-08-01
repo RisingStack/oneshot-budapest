@@ -148,6 +148,12 @@ img.logo {
     background-position: center center;
 }
 
+.tickets {
+    padding-top: 6px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
 img.spns {
     max-height: 90px;
 }
