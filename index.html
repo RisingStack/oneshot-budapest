@@ -1,309 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>NodeConf ONE-SHOT Budapest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0  maximum-scale=1.0, user-scalable=0">
     <meta name="author" content="Gergely Nemeth">
+    <meta name="description" content="NodeConf ONE-SHOT Budapest."/>
 
-    <link rel="image_src" href="logo.png" / >
+    <link rel="image_src" href="logo.png"/>
 
-    <meta name="description" content="NodeConf ONE-SHOT Budapest." />
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet'
+          type='text/css'>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container landing">
+    <div class="row">
+        <div class="col-md-4">
 
-    <style>
-    /* hexagons */
-    * {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <img class="logo" src="logo.png"/>
+                    </div>
+                </div>
+            </div>
 
-    .hexagon3 {
-      /*this smushes a square into a 60deg/120deg rhombus*/
-      position: relative;
-      width: 150px;
-      height: 86.60254px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-      border-left: solid 3px white;
-      border-right: solid 3px white;
-      /*cover up the -moz-box shadows */
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
 
-      filter: grayscale(100%); /* Current draft standard */
-      -webkit-filter: grayscale(100%); /* New WebKit */
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
-      filter: gray; /* IE */
-      -webkit-filter: grayscale(1); /* Old WebKit */
+                    <section class="conf-info">
+                        <h3 class="text-center">Date: November 21th, 2014</h3>
 
-    }
-    .hexagon3 .hex1,
-    .hexagon3 .hex2 {
-      position: absolute;
-      overflow: hidden;
-      width: 106.06602px;
-      height: 106.06602px;
-      left: 19.65064px;
-      /*for some reason this 1px correction is needed */
-      background: inherit;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-      -moz-transform: scaleY(0.57735) rotate(-45deg);
-      -ms-transform: scaleY(0.57735) rotate(-45deg);
-      -webkit-transform: scaleY(0.57735) rotate(-45deg);
-      transform: scaleY(0.57735) rotate(-45deg);
-    }
-    .hexagon3 .hex1:after,
-    .hexagon3 .hex2:after {
-      /*counter rotate and un-scale the bg image*/
-      content: "";
-      position: absolute;
-      left: -22.65064px;
-      /*same correction as up above */
-      width: 150px;
-      height: 106.06602px;
-      top: 0;
-      background: inherit;
-      -moz-transform: rotate(45deg) scaleY(1.73205);
-      -ms-transform: rotate(45deg) scaleY(1.73205);
-      -webkit-transform: rotate(45deg) scaleY(1.73205);
-      transform: rotate(45deg) scaleY(1.73205);
-    }
-    .hexagon3 .hex1 {
-      top: -53.03301px;
-      border-top: solid 5.19615px white;
-      border-right: solid 5.19615px white;
-    }
-    .hexagon3 .hex1:after {
-      background-position: center 17%;
-      margin-top: -5.19615px;
-    }
-    .hexagon3 .hex2 {
-      bottom: -53.03301px;
-      border-left: solid 5.19615px white;
-      border-bottom: solid 5.19615px white;
-    }
-    .hexagon3 .hex2:after {
-      background-position: center 83%;
-      margin-left: -4.19615px;
-      /*that pesky single pixel correction again*/
-    }
-    .hexagon3:after {
-      content: "";
-      position: absolute;
-      top: 2.12132px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 82.3599px;
-      background: inherit;
-    }
+                        <h4 class="text-center">Venue: Design Terminal, Budapest</h4>
 
-    </style>
+                        <h4 class="tickets text-center">Tickets: From 1st, Aug, 3PM (CET)</h4>
 
+                        <br/>
 
-    <style>
-    div.header {
-      text-align:center;
-    }
-    img.logo {
-      width:80%;
-    }
-    div.info {
-      width:100%;
-      font-family:Reenie Beanie;
-      font-size:200%;
-      text-align:center;
-      color:#333333;
-    }
-    div#main-grid {
-      margin-top:20px;
-    }
-    body {
-      color:#333333;
-    }
-    h2 {
-      font-family:Lato;
-      font-weight:normal;
-      color:#333333;
-    }
-    h3 {
-      font-family:Lato;
-      font-weight:normal;
-      color:#333333;
-    }
-    p {
-      font-family:Lato;
-      /*font-size:150%;*/
-    }
+                        <p>ONE-SHOT is a one day single track speaker series presented by
+                            NodeConf.</p>
 
-    div.conf-info {
-      margin-left:10%;
-      margin-right:10%;
-      padding: 0 0 0 0;
-      text-align:left;
-    }
-    div.speaker {
-      width:100%;
-      clear:both;
-    }
+                        <p>The event starts at ten in the morning and we'll have you out by six.</p>
 
-    img.spns {
-      max-width:100%;
-    }
+                        <p>After the official part, we will head to a nearby pub and have some
+                            beer.</p>
 
-    div#matteo {
-      background: url('https://avatars2.githubusercontent.com/u/52195?v=1&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
+                        <p>
+                            <a href="conduct.html">ONE-SHOT is dedicated to a harrassment
+                                free environment.</a>
+                        </p>
+                    </section>
 
-    div#mathias {
-      background: url('https://avatars2.githubusercontent.com/u/376661?v=1&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center">Organized By</h4>
 
-    div#aria {
-      background: url('https://avatars0.githubusercontent.com/u/2876?v=1&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
-
-
-    div#julian {
-      background: url('https://avatars1.githubusercontent.com/u/10247?v=1&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
-
-
-    p.spns {
-      text-align:center;
-    }
-    img.spns {
-      max-height: 80px;
-      text-align: center;
-    }
-    </style>
-
-  </head>
-  <body>
-    <div class="pure-g" id="main-grid">
-      <div class="pure-u-1-3" style="text-align:center;">
-        <img class="logo" src="logo.png"></img>
-
-        <div class="conf-info">
-          <h2 style="text-align:center;">Date: November 21th, 2014</h2>
-          <h3 style="text-align:center;">Venue: Design Terminal, Budapest</h3>
-          <h3 style="text-align:center;">Tickets: From 1st, Aug, 3PM (CET)</h3>
-          <p>ONE-SHOT is a one day single track speaker series presented by NodeConf.</p>
-          <p>The event starts at ten in the morning and we'll have you out by six.</p>
-          <p>After the official part, we will head to a nearby pub and have some beer.</p>
-          <p><a href="conduct.html">ONE-SHOT is dedicated to a harrassment free environment.</a></p>
-          <h3 style="text-align:center;">Organized By</h3>
-
-          <p class="spns">
-            <a href="http://www.risingstack.com"><img class="spns" src="http://www.risingstack.com/assets/logo/logo-small.png"></img></a>
-          </p>
-
-          <!-- <p class="spns">
-            <a href=""><img class="spns" src=""></img></a>
-          </p> -->
-
-          <p><!-- <a href="mailto:mikeal.rogers@gmail.com, jgovernor@redmonk.com, diana@shoreditchworks.com, fintanr@gmail.com, nunojobpinto@gmail.com?subject=NodeConf%20ONE-SHOT%20Sponsorship">Interested in sponsoring?</a> --></p>
-
+                    <p class="text-center">
+                        <a href="http://www.risingstack.com"
+                           title="RisingStack: Node.js API development">
+                            <img class="spns" alt="RisingStack"
+                                 src="http://www.risingstack.com/assets/logo/logo-small.png"/>
+                        </a>
+                    </p>
+                </div>
+            </div>
 
         </div>
 
-      </div>
-      <div class="pure-u-2-3">
+        <div class="col-md-8">
 
-        <div class="speaker">
-          <div class="hexagon3" id="matteo" style="float:left;margin-right:20px;">
-            <div class="hex1"></div>
-            <div class="hex2"></div>
-          </div>
-          <div>
-            <h2>Matteo Collina</h2>
-            <h3>Hardware Hacking on Stage</h3>
-            <p>Matteo will do some crazy hardware hacking live on stage: a connected device piece by piece and connect it to a Web Application</p>
-          </div>
+            <!-- Matteo Collina -->
+            <div class="row">
+                <div class="col-md-2 hexagon3" id="matteo">
+                    <div class="hex1"></div>
+                    <div class="hex2"></div>
+                </div>
+
+                <div class="col-md-10">
+                    <h2>Matteo Collina</h2>
+
+                    <h3>Hardware Hacking on Stage</h3>
+
+                    <p>Matteo will do some crazy hardware hacking live on stage: a connected
+                        device
+                        piece by piece and connect it to a Web Application</p>
+                </div>
+            </div>
+
+
+            <!-- Mathias Buus -->
+            <div class="row">
+                <div class="col-md-2 hexagon3" id="mathias">
+                    <div class="hex1"></div>
+                    <div class="hex2"></div>
+                </div>
+
+                <div class="col-md-10">
+                    <h2>Mathias Buus</h2>
+
+                    <h3>BitTorrent, p2p with Node.js</h3>
+
+                    <p>Mathias will shortly cover how BitTorrent works, then goes straight to
+                        demos
+                        around mad science things you can build
+                        using BitTorrent and torrent-stream and other awesome p2p modules on
+                        npm</p>
+                </div>
+            </div>
+
+
+            <!-- Aria Stewart -->
+            <div class="row">
+                <div class="col-md-2 hexagon3" id="aria">
+                    <div class="hex1"></div>
+                    <div class="hex2"></div>
+                </div>
+
+                <div class="col-md-10">
+                    <h2>Aria Stewart</h2>
+                    <h3>Design for retry</h3>
+                    <p>Microservices, REST, message busses and why idempotency is the only way to scale</p>
+                </div>
+            </div>
+
+
+            <!-- Julian Gruber -->
+            <div class="row">
+                <div class="col-md-2 hexagon3" id="julian">
+                    <div class="hex1"></div>
+                    <div class="hex2"></div>
+                </div>
+
+                <div class="col-md-10">
+                    <h2>Julian Gruber</h2>
+                    <h3>Node.js vs Go</h3>
+                    <p>An unopinionated comparison</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Interested in speaking? Read and submit a CFP on our <a
+                            href="https://github.com/RisingStack/oneshot-budapest">GitHub
+                        repo</a>.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Tickets coming soon!</h4>
+                </div>
+            </div>
         </div>
-
-        <div class="speaker">
-          <div class="hexagon3" id="mathias" style="float:left;margin-right:20px;">
-            <div class="hex1"></div>
-            <div class="hex2"></div>
-          </div>
-          <div>
-            <h2>Mathias Buus</h2>
-            <h3>BitTorrent, p2p with Node.js</h3>
-            <p>Mathias will shortly cover how BitTorrent works, then goes straight to demos around mad science things you can build
-                using BitTorrent and torrent-stream and other awesome p2p modules on npm</p>
-          </div>
-        </div>
-
-        <div class="speaker">
-          <div class="hexagon3" id="aria" style="float:left;margin-right:20px;">
-            <div class="hex1"></div>
-            <div class="hex2"></div>
-          </div>
-          <div>
-            <h2>Aria Stewart</h2>
-            <h3>Design for retry</h3>
-            <p>Microservices, REST, message busses and why idempotency is the only way to scale</p>
-          </div>
-        </div>
-
-        <div class="speaker">
-          <div class="hexagon3" id="julian" style="float:left;margin-right:20px;">
-            <div class="hex1"></div>
-            <div class="hex2"></div>
-          </div>
-          <div>
-            <h2>Julian Gruber</h2>
-            <h3>Node.js vs Go</h3>
-            <p>An unopinionated comparison</p>
-          </div>
-        </div>
-
-        <div class="speaker">
-          <h3>Interested in speaking? Read and submit a CFP on our <a href="https://github.com/RisingStack/oneshot-budapest">GitHub repo</a>.</h3>
-        </div>
-
-
-        <div class="speaker">
-          <h3>Tickets coming soon!</h3>
-        </div>
-
-
-      </div>
     </div>
+</div>
 
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    <div class="header">
-
-    </div>
-    <div class="info">
-
-
-    </div>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-50415716-2', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-  </body>
+    ga('create', 'UA-50415716-2', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
 </html>

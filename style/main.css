@@ -1,0 +1,176 @@
+/* region hexagon */
+
+.hexagon3 {
+    /*this smushes a square into a 60deg/120deg rhombus*/
+    position: relative;
+    width: 150px;
+    height: 86.60254px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    /*cover up the -moz-box shadows */
+
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+
+}
+
+.hexagon3 .hex1,
+.hexagon3 .hex2 {
+    position: absolute;
+    overflow: hidden;
+    width: 106.06602px;
+    height: 106.06602px;
+    left: 19.65064px;
+    /*for some reason this 1px correction is needed */
+    background: inherit;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    -moz-transform: scaleY(0.57735) rotate(-45deg);
+    -ms-transform: scaleY(0.57735) rotate(-45deg);
+    -webkit-transform: scaleY(0.57735) rotate(-45deg);
+    transform: scaleY(0.57735) rotate(-45deg);
+}
+
+.hexagon3 .hex1:after,
+.hexagon3 .hex2:after {
+    /*counter rotate and un-scale the bg image*/
+    content: "";
+    position: absolute;
+    left: -22.65064px;
+    /*same correction as up above */
+    width: 150px;
+    height: 106.06602px;
+    top: 0;
+    background: inherit;
+    -moz-transform: rotate(45deg) scaleY(1.73205);
+    -ms-transform: rotate(45deg) scaleY(1.73205);
+    -webkit-transform: rotate(45deg) scaleY(1.73205);
+    transform: rotate(45deg) scaleY(1.73205);
+}
+
+.hexagon3 .hex1 {
+    top: -53.03301px;
+    border-top: solid 5.19615px white;
+    border-right: solid 5.19615px white;
+}
+
+.hexagon3 .hex1:after {
+    background-position: center 17%;
+    margin-top: -5.19615px;
+}
+
+.hexagon3 .hex2 {
+    bottom: -53.03301px;
+    border-left: solid 5.19615px white;
+    border-bottom: solid 5.19615px white;
+}
+
+.hexagon3 .hex2:after {
+    background-position: center 83%;
+    margin-left: -4.19615px;
+    /*that pesky single pixel correction again*/
+}
+
+.hexagon3:after {
+    content: "";
+    position: absolute;
+    top: 2.12132px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 82.3599px;
+    background: inherit;
+}
+
+/* end region hexagon */
+
+body {
+    padding-top: 20px;
+    color: #333333;
+}
+
+.container.landing {
+    width: 96%;
+}
+
+img.logo {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.landing {
+    margin-bottom: 20px;
+}
+
+.landing h2, .landing h3, .landing p {
+    font-family: Lato;
+}
+
+.conduct {
+    font-family: HelveticaNeue-Light;
+    font-size: 130%;
+    line-height: 160%;
+}
+
+.conduct h2, .conduct h3 {
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+#matteo {
+    background: url('https://avatars2.githubusercontent.com/u/52195?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
+#mathias {
+    background: url('https://avatars2.githubusercontent.com/u/376661?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
+#aria {
+    background: url('https://avatars0.githubusercontent.com/u/2876?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
+#julian {
+    background: url('https://avatars1.githubusercontent.com/u/10247?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
+.tickets {
+    padding-top: 6px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+img.spns {
+    max-height: 90px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 40px 0 40px 0;
+    background-color: #efefef;
+}
+
+footer::after {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    margin-top: -140px;
+    width: 100%;
+    height: 180px;
+    background-color: #efefef;
+}
+
