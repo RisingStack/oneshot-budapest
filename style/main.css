@@ -136,6 +136,18 @@ img.logo {
     background-position: center center;
 }
 
+#aria {
+    background: url('https://avatars0.githubusercontent.com/u/2876?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
+#julian {
+    background: url('https://avatars1.githubusercontent.com/u/10247?v=1&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
 img.spns {
     max-height: 90px;
 }
