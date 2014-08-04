@@ -164,6 +164,10 @@ img.spns {
     max-height: 90px;
 }
 
+img.spns.supporter {
+    max-height: 50px;
+}
+
 footer {
     margin-top: 20px;
     padding: 40px 0 40px 0;
