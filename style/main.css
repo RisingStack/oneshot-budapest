@@ -160,6 +160,12 @@ img.logo {
     background-position: center center;
 }
 
+#maciej {
+    background: url('https://avatars1.githubusercontent.com/u/692459?v=2&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
 .tickets {
     padding-top: 6px;
     text-decoration: underline;
