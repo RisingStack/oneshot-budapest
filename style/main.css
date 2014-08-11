@@ -196,3 +196,6 @@ footer::after {
     background-color: #efefef;
 }
 
+.conf-info #tito-register-form{
+    width: 100%;
+}
