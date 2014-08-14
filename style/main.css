@@ -113,6 +113,10 @@ img.logo {
     font-family: Lato;
 }
 
+.landing h4 {
+    padding: 10px 0 10px 0;
+}
+
 .conduct {
     font-family: HelveticaNeue-Light;
     font-size: 130%;
