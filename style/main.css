@@ -202,4 +202,5 @@ footer::after {
 
 .conf-info #tito-register-form{
     width: 100%;
+    min-height: 200px;
 }
