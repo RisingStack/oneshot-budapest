@@ -170,6 +170,12 @@ img.logo {
     background-position: center center;
 }
 
+#miroslav {
+    background: url('https://avatars2.githubusercontent.com/u/1140553?v=2&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
 .tickets {
     padding-top: 6px;
     text-decoration: underline;
