@@ -188,6 +188,12 @@ img.logo {
     background-position: center center;
 }
 
+#patrick {
+    background: url('https://avatars3.githubusercontent.com/u/74390?v=2&s=250');
+    background-size: 236.60254px auto;
+    background-position: center center;
+}
+
 .tickets {
     padding-top: 6px;
     text-decoration: underline;
